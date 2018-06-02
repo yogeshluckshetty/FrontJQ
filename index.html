@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Study Yo!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <style>
+        .mt-30 {
+            margin-top: 30px;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <a class="navbar-brand" href="index.html">Study Yo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#c1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="c1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suggest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">report abuse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-30">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-header">Branch</div>
+                        <ul class="list-group list-group-flush" id="select-branch">
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Semester</div>
+                        <ul class="list-group list-group-flush" id="select-semester">
+                            <li class="list-group-item">Select a branch first</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Subject</div>
+                        <ul class="list-group list-group-flush" id="select-subject">
+                            <li class="list-group-item">Select a semester first</li>
+                        </ul>
+                    </div>
+                    <div class="card ">
+                        <div class="card-header">Unit</div>
+                        <ul class="list-group list-group-flush" id="select-unit">
+                            <li class="list-group-item">Select a subject first</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-30">
+        <div class="row">
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <div class="card-body ">
+                        <a href="#" class="btn btn-primary">Download</a>
+                        <a href="#" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // data
+        var data = [{
+            "branch": "CSE",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "ECE",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "IT",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "EEE",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "Mech",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "civil",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "bio-tech",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        },{
+            "branch": "prod",
+            "semesters": [{
+                "name":1,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":2,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":3,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":4,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":5,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":6,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            },{
+                "name":7,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }, {
+                "name":8,
+                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+            }]
+        }];
+
+        // populate the branches
+        jQuery(data).each(function(index, value) 
+        {
+            jQuery("#select-branch").append('<li class="list-group-item pointer">' + value.branch + '</li>');
+        });
+
+        // click handler for branch
+        jQuery("#select-branch").click(function(e) 
+        {
+            // find the branch that was clicked
+            const BRANCH = data.find(function(value) //what is the data type of this constant(array?)
+            {
+                return value.branch === e.target.innerHTML  //what is this returning? 
+            })
+            // empty the semester list
+            jQuery("#select-semester").html("");
+            // populate the semesters
+            jQuery(BRANCH.semesters).each(function(index, value) 
+            {
+                jQuery("#select-semester").append('<li class="list-group-item pointer">' + value.name + '</li>');
+            });
+            
+        });
+               // click handler for semester
+        jQuery("#select-semester").click(function(e) 
+        {
+            // find the semester that was clicked
+            const semester = data.find(function(value) 
+            {
+                return value.semesters[0].name === e.target.outerText
+            })
+            // empty the subject list
+            jQuery("#select-subject").html("");
+            // populate the subject
+            jQuery(SEMESTER.subject).each(function(index, value) 
+            {
+                jQuery("#select-subject").append('<li class="list-group-item pointer">' + value.subject + '</li>');
+            });
+        });  
+
+  
+      
+      
+      
+
+
+
+    </script>
+</body>
+</html>
