@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Study Yo!</title>
     <meta charset="utf-8">
@@ -22,7 +22,6 @@
         }
     </style>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
         <a class="navbar-brand" href="index.html">Study Yo</a>
@@ -81,121 +80,13 @@
         <div class="row">
             <div class="col-sm-6 col-md-2">
                 <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
+                    <img class="card-img-top" src="pdf.png" alt="Card image">
                     <div class="card-body ">
                         <a href="#" class="btn btn-primary">Download</a>
                         <a href="#" class="btn btn-primary">Open</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="/images/pdf.png" alt="Card image">
-                    <div class="card-body ">
-                        <a href="#" class="btn btn-primary">Download</a>
-                        <a href="#" class="btn btn-primary">Open</a>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
     </div>
     <script>
@@ -417,54 +308,40 @@
                 "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
             }]
         }];
-
-        // populate the branches
+  
         jQuery(data).each(function(index, value) 
         {
             jQuery("#select-branch").append('<li class="list-group-item pointer">' + value.branch + '</li>');
         });
-
-        // click handler for branch
+        var obj1;
         jQuery("#select-branch").click(function(e) 
         {
-            // find the branch that was clicked
-            const BRANCH = data.find(function(value) //what is the data type of this constant(array?)
+            obj1 = data.find(function(x) 
             {
-                return value.branch === e.target.innerHTML  //what is this returning? 
+                return x.branch == e.target.innerHTML 
             })
-            // empty the semester list
             jQuery("#select-semester").html("");
-            // populate the semesters
-            jQuery(BRANCH.semesters).each(function(index, value) 
+            jQuery(obj1.semesters).each(function(index, value) 
             {
                 jQuery("#select-semester").append('<li class="list-group-item pointer">' + value.name + '</li>');
-            });
-            
+            });    
         });
-               // click handler for semester
+
+
+
+
         jQuery("#select-semester").click(function(e) 
         {
-            // find the semester that was clicked
-            const semester = data.find(function(value) 
+            var obj2=obj1.semesters.find(function(y)
             {
-                return value.semesters[0].name === e.target.outerText
+                return y.name==e.target.innerHTML
             })
-            // empty the subject list
             jQuery("#select-subject").html("");
-            // populate the subject
-            jQuery(SEMESTER.subject).each(function(index, value) 
-            {
-                jQuery("#select-subject").append('<li class="list-group-item pointer">' + value.subject + '</li>');
+            jQuery(obj2.subjects).each(function(index, value) 
+            {   
+                jQuery("#select-subject").append('<li class="list-group-item pointer">' + value + '</li>');
             });
-        });  
-
-  
-      
-      
-      
-
-
-
+        }); 
     </script>
 </body>
 </html>
