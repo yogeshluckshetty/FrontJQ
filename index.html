@@ -57,19 +57,19 @@
                     <div class="card">
                         <div class="card-header">Semester</div>
                         <ul class="list-group list-group-flush" id="select-semester">
-                            <li class="list-group-item">Select a branch first</li>
+                            <li class="list-group-item">Select previous option</li>
                         </ul>
                     </div>
                     <div class="card">
                         <div class="card-header">Subject</div>
                         <ul class="list-group list-group-flush" id="select-subject">
-                            <li class="list-group-item">Select a semester first</li>
+                            <li class="list-group-item">Select previous option</li>
                         </ul>
                     </div>
                     <div class="card ">
                         <div class="card-header">Unit</div>
                         <ul class="list-group list-group-flush" id="select-unit">
-                            <li class="list-group-item">Select a subject first</li>
+                            <li class="list-group-item">Select previous option</li>
                         </ul>
                     </div>
                 </div>
@@ -90,224 +90,1269 @@
         </div>
     </div>
     <script>
-        // data
-        var data = [{
+        const data = [
+  {
+    "branch": "Shyann Turcotte IV",
+    "semesters": [
+      {
+        "semester": "Thaddeus Runolfsdottir",
+        "subjects": [
+          {
+            "subject": "adipisicing nisi",
+            "units": [
+              "qui nisi",
+              "cupidatat",
+              "qui",
+              "sint dolore Lorem ullamco aute"
+            ]
+          },
+          {
+            "subject": "do",
+            "units": [
+              "exercitation magna proident est",
+              "minim",
+              "Lorem exercitation",
+              "consequat commodo"
+            ]
+          },
+          {
+            "subject": "incididunt aliqua dolore",
+            "units": [
+              "in aliqua cupidatat dolor",
+              "commodo",
+              "sint quis",
+              "nulla in reprehenderit cillum"
+            ]
+          },
+          {
+            "subject": "deserunt nostrud",
+            "units": [
+              "proident magna commodo ipsum",
+              "reprehenderit",
+              "Excepteur cillum s",
+              "Lorem adipisicing eu minim commodo",
+              "voluptate culpa commodo proident"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Tyrese Moore",
+        "subjects": [
+          {
+            "subject": "cillum tempor",
+            "units": [
+              "laborum ex nisi ut",
+              "aute adipisicing et velit",
+              "aute nul",
+              "in pariatur ipsum"
+            ]
+          },
+          {
+            "subject": "cillum id",
+            "units": [
+              "enim in deserunt",
+              "dol",
+              "deserunt inci",
+              "ea quis sint labore",
+              "culpa laborum quis"
+            ]
+          },
+          {
+            "subject": "aliquip dolore ut",
+            "units": [
+              "nostrud exercitation elit",
+              "nulla aliqua",
+              "voluptate aliquip velit consequa",
+              "elit"
+            ]
+          },
+          {
+            "subject": "ea in sunt",
+            "units": [
+              "consectetur consequat nostrud sit",
+              "fugiat dolor Lorem",
+              "Excepteur adipisicing ",
+              "mollit ipsum nisi"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Maxwell Hyatt",
+        "subjects": [
+          {
+            "subject": "cupidatat dolor",
+            "units": [
+              "culpa adipisicing minim",
+              "esse in laborum veniam enim",
+              "ut commodo Ut aliqua",
+              "ut pariatur ut"
+            ]
+          },
+          {
+            "subject": "fugiat consequat",
+            "units": [
+              "dolore esse",
+              "in",
+              "sit ea Ut"
+            ]
+          },
+          {
+            "subject": "deserunt proident Lorem magna",
+            "units": [
+              "",
+              "in",
+              "voluptate id"
+            ]
+          },
+          {
+            "subject": "cillum veniam voluptate",
+            "units": [
+              "occaecat",
+              "in ipsum",
+              "enim et",
+              "non in sunt culpa"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "Wilfrid Crona",
+    "semesters": [
+      {
+        "semester": "Yolanda Hickle",
+        "subjects": [
+          {
+            "subject": "ut incididunt sunt",
+            "units": [
+              "cupidat",
+              "deserunt nostrud proident",
+              "esse",
+              "cupidata"
+            ]
+          },
+          {
+            "subject": "sunt in",
+            "units": [
+              "ullamco ea consectetur dolore",
+              "sint ut",
+              "in eiusmod sunt proident"
+            ]
+          },
+          {
+            "subject": "aute ipsum",
+            "units": [
+              "sint",
+              "reprehenderit",
+              "tempor non sed"
+            ]
+          },
+          {
+            "subject": "tempor fugiat",
+            "units": [
+              "adipisicing",
+              "occaecat sint",
+              "id aliquip consequat",
+              "voluptate sunt"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Jennings Olson",
+        "subjects": [
+          {
+            "subject": "amet ex",
+            "units": [
+              "ad cupid",
+              "dolore",
+              "ex",
+              "incididunt culpa ex"
+            ]
+          },
+          {
+            "subject": "est do anim",
+            "units": [
+              "pariatur nostrud incididunt culpa",
+              "anim esse",
+              "irure nulla elit",
+              "dolore et sed"
+            ]
+          },
+          {
+            "subject": "magna ",
+            "units": [
+              "nulla anim incididunt",
+              "laborum in",
+              "culpa veniam in dolore mollit",
+              "ipsum aliqua nisi deserunt",
+              "reprehenderit non ad"
+            ]
+          },
+          {
+            "subject": "elit laborum nulla velit",
+            "units": [
+              "minim",
+              "dolore in",
+              "officia enim"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Mrs. Kenyatta Okuneva",
+        "subjects": [
+          {
+            "subject": "proident tempor aute voluptate",
+            "units": [
+              "ea amet",
+              "officia vel",
+              "ut pariatur incididunt",
+              "ad"
+            ]
+          },
+          {
+            "subject": "cupidatat anim commodo",
+            "units": [
+              "officia laborum reprehenderit consequat voluptate",
+              "quis c",
+              "cupidatat ut voluptate dolore"
+            ]
+          },
+          {
+            "subject": "amet cillum consectetur",
+            "units": [
+              "ipsum",
+              "fugiat qui",
+              "mollit ut sint",
+              "dolor velit "
+            ]
+          },
+          {
+            "subject": "dolore",
+            "units": [
+              "dolore nisi",
+              "deserunt eu ut",
+              "laborum aute",
+              "aliqua pariatur dolore commodo"
+            ]
+          },
+          {
+            "subject": "aliquip consequat ex",
+            "units": [
+              "enim voluptate non Excepteur magna",
+              "in laboris reprehenderit",
+              "et eiusmod",
+              "ea tempor Duis reprehenderit exercitation"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "Mrs. Cyril Walker",
+    "semesters": [
+      {
+        "semester": "Maud Lemke",
+        "subjects": [
+          {
+            "subject": "ea ",
+            "units": [
+              "cillum ea eu consectetur",
+              "cupidatat in Ut Duis",
+              "in dolore in laboris ut",
+              "dolor",
+              "in in"
+            ]
+          },
+          {
+            "subject": "fugiat occaecat aute laboris",
+            "units": [
+              "ipsum",
+              "irure voluptate esse dolor ullamco",
+              "laboris esse ipsum ad",
+              "nisi magna reprehenderit"
+            ]
+          },
+          {
+            "subject": "sit",
+            "units": [
+              "Ut Lorem dolore",
+              "pariatur consectetur exercitation",
+              "Ut ea irure",
+              "aliquip est aute aliqua mollit",
+              "dolor eiusmod ut"
+            ]
+          },
+          {
+            "subject": "tempor pariatur",
+            "units": [
+              "nostrud ut Duis ullamco fugiat",
+              "adipisicing",
+              "ad sed esse ut",
+              "labore Excepteur",
+              "consectetur elit"
+            ]
+          },
+          {
+            "subject": "nisi minim sed ut",
+            "units": [
+              "adipisicing ut do",
+              "veniam Ut occaecat ut magna",
+              "in et tempor ullamco elit"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Corrine Langworth",
+        "subjects": [
+          {
+            "subject": "incididunt",
+            "units": [
+              "ea ut Ut est",
+              "non sunt",
+              "ullamco pariatur a",
+              "minim reprehenderit do "
+            ]
+          },
+          {
+            "subject": "aute enim cupidatat",
+            "units": [
+              "anim qui Excepteur Lorem ea",
+              "aute consectetur ex",
+              "ut dolore consectetur"
+            ]
+          },
+          {
+            "subject": "amet eu",
+            "units": [
+              "offi",
+              "consequat sed",
+              "laboris consectetur amet ullamco ut"
+            ]
+          },
+          {
+            "subject": "id ut officia",
+            "units": [
+              "fugiat cupidatat ipsum",
+              "Lorem officia dolor sunt",
+              "nostrud voluptate tempor"
+            ]
+          },
+          {
+            "subject": "irure dolore velit",
+            "units": [
+              "do sint",
+              "aliqua",
+              "nisi",
+              "nostrud deserunt ea"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "Aiyana Walter",
+    "semesters": [
+      {
+        "semester": "Leonard Schimmel",
+        "subjects": [
+          {
+            "subject": "proident",
+            "units": [
+              "velit",
+              "elit ut mollit laboris",
+              "consectetur incididunt eiusmod sunt",
+              "qui Lorem"
+            ]
+          },
+          {
+            "subject": "fugiat cupidatat eiusmod",
+            "units": [
+              "consectetur do esse",
+              "nulla",
+              "consequat pariatur Ut voluptate nulla",
+              "mollit enim nulla"
+            ]
+          },
+          {
+            "subject": "consectetur enim laborum dol",
+            "units": [
+              "Excepteur",
+              "anim consequat U",
+              "dolore occaecat adipisicing sit",
+              "nostrud reprehenderit i"
+            ]
+          },
+          {
+            "subject": "nisi",
+            "units": [
+              "elit occaecat veniam ea labore",
+              "ea in consectetur sunt",
+              "tempor ut magna",
+              "enim incididunt tempor nostrud nulla",
+              "ut dolor"
+            ]
+          },
+          {
+            "subject": "occaecat consequat",
+            "units": [
+              "pariatur nisi ut",
+              "ad proident cillum adipisicing",
+              "culpa ut",
+              "dolore proident"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Elton Greenfelder",
+        "subjects": [
+          {
+            "subject": "consequat sunt ea",
+            "units": [
+              "dolor aliqua exercitation sed",
+              "est pariatur eiusmod",
+              "sit et dolor ut",
+              "sunt cill",
+              "nu"
+            ]
+          },
+          {
+            "subject": "ipsum commodo deserunt cillum",
+            "units": [
+              "deserunt esse",
+              "enim",
+              "aliqua sit",
+              "ipsum aliquip cillum culpa"
+            ]
+          },
+          {
+            "subject": "amet ut",
+            "units": [
+              "veniam aliquip quis sed",
+              "culpa Lorem",
+              "aliquip dolor cillum",
+              "ut cillum nisi incididunt"
+            ]
+          },
+          {
+            "subject": "ut do",
+            "units": [
+              "mollit",
+              "proident labore in",
+              "aliquip do officia Duis",
+              "sunt consequat Lorem in"
+            ]
+          },
+          {
+            "subject": "deserunt amet",
+            "units": [
+              "est eu laborum sint aute",
+              "sunt in sed eu",
+              "in adipisicing qui",
+              "eu sint"
+            ]
+          }
+        ]
+      },
+      {
+        "semester": "Maximillia Bergstrom",
+        "subjects": [
+          {
+            "subject": "minim Excepteur",
+            "units": [
+              "nulla culpa irure nostrud",
+              "eiusmod anim",
+              "minim irure quis culpa"
+            ]
+          },
+          {
+            "subject": "nulla lab",
+            "units": [
+              "Duis pariatur",
+              "sint culpa quis",
+              "quis dolor mollit nulla"
+            ]
+          },
+          {
+            "subject": "anim",
+            "units": [
+              "nisi et Excepteur amet",
+              "Excepteur",
+              "elit",
+              "consectetur consequat eu fugiat do"
+            ]
+          },
+          {
+            "subject": "sit ex",
+            "units": [
+              "pariatur minim",
+              "nisi deserunt magna",
+              "mollit laboris fugiat Duis quis"
+            ]
+          },
+          {
+            "subject": "Excepteur eiusmod ad",
+            "units": [
+              "commodo cillum et",
+              "ut in aute",
+              "anim sint tem"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
+    /*    var data = 
+        [{
             "branch": "CSE",
-            "semesters": [{
+            "semesters":[{
                 "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             }]
+           
         },{
             "branch": "ECE",
-            "semesters": [{
+            "semesters":[{
                 "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             }]
-        },{
-            "branch": "IT",
-            "semesters": [{
-                "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }]
+           
         },{
             "branch": "EEE",
-            "semesters": [{
+            "semesters":[{
                 "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             }]
+           
         },{
-            "branch": "Mech",
-            "semesters": [{
+            "branch": "IT",
+            "semesters":[{
                 "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             }]
+           
         },{
-            "branch": "civil",
-            "semesters": [{
+            "branch": "MECH",
+            "semesters":[{
                 "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             },{
                 "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
+            },{
                 "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
+                "subjects": [{
+                    "subject":"Subject-1",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-2",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-3",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-4",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                },{
+                    "subject":"Subject-5",
+                    "units":["unit-1","unit-2","unit-3","unit-4","unit-5"]
+                }]
             }]
-        },{
-            "branch": "bio-tech",
-            "semesters": [{
-                "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }]
-        },{
-            "branch": "prod",
-            "semesters": [{
-                "name":1,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":2,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":3,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":4,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":5,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":6,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            },{
-                "name":7,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }, {
-                "name":8,
-                "subjects": ["Subject-1", "Subject-2", "Subject-3","Subject-4","Subject-5"]
-            }]
-        }];
+           
+        }]; */
   
         jQuery(data).each(function(index, value) 
         {
@@ -321,27 +1366,45 @@
                 return x.branch == e.target.innerHTML 
             })
             jQuery("#select-semester").html("");
+            jQuery("#select-subject").html("Select previous option");
+            jQuery("#select-unit").html("Select previous option");
             jQuery(obj1.semesters).each(function(index, value) 
             {
-                jQuery("#select-semester").append('<li class="list-group-item pointer">' + value.name + '</li>');
+                jQuery("#select-semester").append('<li class="list-group-item pointer">' + value.semester + '</li>');
             });    
         });
 
 
-
-
+        var obj2;
         jQuery("#select-semester").click(function(e) 
         {
-            var obj2=obj1.semesters.find(function(y)
+            obj2=obj1.semesters.find(function(y)
             {
-                return y.name==e.target.innerHTML
+                return y.semester==e.target.innerHTML
             })
             jQuery("#select-subject").html("");
+            jQuery("#select-unit").html("Select previous option");
             jQuery(obj2.subjects).each(function(index, value) 
             {   
-                jQuery("#select-subject").append('<li class="list-group-item pointer">' + value + '</li>');
+                jQuery("#select-subject").append('<li class="list-group-item pointer">' + value.subject + '</li>');
             });
         }); 
+
+        jQuery("#select-subject").click(function(e) 
+        {
+            var obj3=obj2.subjects.find(function(y)
+            {
+                return y.subject==e.target.innerHTML
+            })
+            jQuery("#select-unit").html("");
+            jQuery(obj3.units).each(function(index, value) 
+            {   
+                jQuery("#select-unit").append('<li class="list-group-item pointer">' + value + '</li>');
+            });
+        }); 
+
+
+
     </script>
 </body>
 </html>
